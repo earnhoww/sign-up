@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Sign Up</title>
+</head>
+
+<body>
+    <div id="main-image">
+        <img src="https://images.unsplash.com/photo-1721332153282-3be1f363074d?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+    </div>
+    <div class="main">
+        <div id="top">
+            <p>This is a very legitimate and real sign up page</p>
+        </div>
+
+        <form id="main-form">
+            <div class="entry">
+                <label for="fname">First Name: </label><br>
+                <input type="text" id="fname" name="fname" placeholder="John" required>
+                <div class="error"></div>
+            </div>
+
+            <div class="entry">
+                <label for="lname">Last Name: </label><br>
+                <input type="text" id="lname" name="lname" placeholder="Doe" required>
+                <div class="error"></div>
+            </div>
+
+            <div class="entry">
+                <label for="email">Email: </label><br>
+                <input type="text" id="email" name="email" placeholder="example@mail.com" required>
+                <div class="error"></div>
+            </div>
+
+            <div class="entry">
+                <label for="phone">Phone Number: </label><br>
+                <input type="text" id="phone" name="phone" required>
+                <div class="error"></div>
+            </div>
+
+            <div class="entry">
+                <label for="password">Password: </label><br>
+                <input type="password" id="password" name="password" required>
+                <div class="error"></div>
+            </div>
+
+            <div class="entry">
+                <label for="confirm-password">Confirm Password: </label><br>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+                <div class="error"></div>
+            </div>
+
+            <p><button id="create-account" type="submit">Create Account</button></p>
+        </form>
+        <div id="bot">
+            
+            <p>Already have an account? <a href>Log in</a></p>
+            <script src="password.js"></script>
+            
+        </div>
+    </div>
+
+
+</body>
+
+</html>

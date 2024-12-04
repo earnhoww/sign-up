@@ -1,0 +1,90 @@
+body{
+    background-color: lightblue;
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Prevent scrollbars */
+    display: flex;
+    flex-direction: row;
+}
+
+.main{
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    height: 100vh;
+    width: 40vw;
+}
+
+#top, #bot{
+    justify-items: center;
+    align-content: center;
+    /* border: 5px blue solid; */
+    background-color: gainsboro;
+    font-weight: 900;
+    font-size: 1.5rem;
+    padding: 10px;
+    height: 25%;
+}
+
+#main-form{
+    display: flex;
+    padding: 10px;
+    flex-wrap: wrap;
+    height: 50%;
+    justify-items: center;
+}
+
+.entry{
+    width: calc(50% - 20px);
+    margin: 5px;   
+    padding: 5px;
+    box-sizing: border-box;
+    align-content: center;
+}
+
+button{
+    border-radius: 20px;
+    background-color: darkcyan;
+    color: white;
+    padding: 10px;
+    border: transparent;
+    font-size: 20px;
+}
+
+input{
+    border-radius: 5px;
+    background-color: ivory;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+input:focus{
+    border: 1px black solid;
+}
+
+.entry.success input{
+    border: 1px limegreen solid;
+}
+
+.entry.error input{
+    border: 1px red solid;
+}
+
+.error{
+    color: red;
+}
+
+#main-image{
+    width: 60vw;
+    max-height: 100vh;
+}
+
+#main-image img{
+    object-fit: cover;
+    width: 100%;
+    aspect-ratio: none;
+    height: 100%;
+}
+
+
